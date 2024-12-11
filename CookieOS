@@ -7,7 +7,7 @@ if [ -f /bin/Cookie ]; then
     # comando
   fi
 else
-  zenity --error --text="fatal error. no Cookie file in /bin shutdown in 5 seconds error code (herobrine)"
+  zenity --error --text="fatal error. no Cookie file in /bin shutdown in 5 seconds error code (herobrine)" &
   sleep 5
   sudo shutdown now
 fi
