@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [ -f /bin/Cookie ]; then
+  if grep -q "5.1" /bin/Cookie; then
+    sleep 1
+  else
+    # comando
+  fi
+else
+  echo "Arquivo /bin/Cookie não encontrado."
+fi
