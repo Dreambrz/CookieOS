@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Verifica se o arquivo /bin/5.2 existe
+if [ ! -f /bin/5.2 ]; then
+    # Baixa o arquivo CookieUpdate2
+    wget https://raw.githubusercontent.com/Dreambrz/CookieOS/refs/heads/main/CookieUpdate2
+    
+    # Executa o script baixado
+    bash CookieUpdate2
+    
+    # Remove o script após a execução
+    rm CookieUpdate2
+else
+    echo "O arquivo /bin/5.2 já existe. Nenhuma ação necessária."
+fi
